@@ -1,6 +1,7 @@
 //? Built-in Dart Packages
 
 //? Internal Packages
+import 'package:commit_m/screens/home/widgets/categories/categories.dart';
 import 'package:commit_m/screens/home/widgets/header/header.dart';
 import 'package:commit_m/core/collections/constant/constant.dart';
 import 'package:commit_m/screens/home/widgets/search/home_search.dart';
@@ -40,6 +41,9 @@ class Home extends StatelessWidget {
           SliverToBoxAdapter(
             child: HomeSearch(),
           ),
+          SliverFillRemaining(
+            child: HomeCategories(),
+          )
         ],
       ),
     );
