@@ -102,7 +102,8 @@ class AppTab extends HookWidget {
                 tabs: [
                   ...items.map(
                     (item) {
-                      final isSelected = currentIndex.value == items.indexOf(item);
+                      final isSelected =
+                          currentIndex.value == items.indexOf(item);
 
                       final child = TabBarItem(
                         isSelected: isSelected,
@@ -139,7 +140,12 @@ class AppTab extends HookWidget {
                       }
                       return false;
                     },
-                    child: e.content,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 8,
+                      ),
+                      child: e.content,
+                    ),
                   ))
             ],
           ),
