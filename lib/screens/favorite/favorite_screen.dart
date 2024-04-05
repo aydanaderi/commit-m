@@ -1,7 +1,6 @@
 //? Built-in Dart Packages
 
-//? Internal Packages
-import 'package:commit_m/screens/home/widgets/home.dart';
+
 
 //? External Packages
 import 'package:flutter/material.dart';
@@ -12,13 +11,13 @@ import 'package:auto_route/auto_route.dart';
  * ____________________________________________________________________________
  */
 @RoutePage()
-class HomeScreen extends StatelessWidget {
+class FavoriteScreen extends StatelessWidget {
   /*
    * Constructor
    * __________________________________________________________________________
    */
-  const HomeScreen({
-    super.key,
+  const FavoriteScreen({
+  super.key,
   });
 
   /*
@@ -30,7 +29,11 @@ class HomeScreen extends StatelessWidget {
     // UI
     return const SafeArea(
       child: Scaffold(
-        body: Home(),
+        body: Center(
+          child: Text(
+            'Favorite',
+          ),
+        ),
       ),
     );
   }

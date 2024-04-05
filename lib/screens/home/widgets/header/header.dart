@@ -6,7 +6,6 @@ import 'package:commit_m/core/theme/extension/context_color.dart';
 
 //? External Packages
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 /*
  * Widget
@@ -37,7 +36,7 @@ class HomeHeader extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SvgPicture.asset(
+            Image.asset(
               profile,
               width: 60,
               height: 60,

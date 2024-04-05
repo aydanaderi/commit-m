@@ -1,6 +1,10 @@
-const profile = 'assets/images/Profile.svg';
+const profile = 'assets/images/profile.png';
 const cappuccino = 'assets/images/cappuccino.svg';
 const express = 'assets/images/Express.svg';
 const coldBrew = 'assets/images/Cold Brew.svg';
-const firstCup = 'assets/images/cuppo_1.svg';
-const secondCup = 'assets/images/cuppo_2.svg';
+const firstCup = 'assets/images/cuppo_1.png';
+const secondCup = 'assets/images/cuppo_2.png';
+const profileIcon = 'assets/images/profile icon.svg';
+const favorite = 'assets/images/favorite.svg';
+const card = 'assets/images/card.svg';
+const home = 'assets/images/home.svg';

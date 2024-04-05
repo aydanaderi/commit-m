@@ -1,4 +1,4 @@
-import 'package:commit_m/screens/home/home_screen.dart';
+import 'package:commit_m/core/utils/routes/routes.dart';
 import 'package:commit_m/core/theme/color_scheme/colors.dart';
 import 'package:commit_m/core/theme/text/text_theme.dart';
 import 'package:flutter/material.dart';
@@ -10,17 +10,23 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    final appRouter = AppRouter();
+
+
+    return MaterialApp.router(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: commitMLightColorScheme,
         textTheme: lightTextTheme,
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      routerConfig: appRouter.config(),
     );
   }
 }
+
