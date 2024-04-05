@@ -1,7 +1,8 @@
 //? Built-in Dart Packages
 
 //? Internal Packages
-import 'package:commit_m/screens/home/widgets/home.dart';
+import 'package:commit_m/core/components/input/input.dart';
+import 'package:commit_m/core/theme/extension/context_color.dart';
 
 //? External Packages
 import 'package:flutter/material.dart';
@@ -10,12 +11,12 @@ import 'package:flutter/material.dart';
  * Widget
  * ____________________________________________________________________________
  */
-class HomeScreen extends StatelessWidget {
+class HomeCategories extends StatelessWidget {
   /*
    * Constructor
    * __________________________________________________________________________
    */
-  const HomeScreen({
+  const HomeCategories({
     super.key,
   });
 
@@ -26,10 +27,21 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // UI
-    return const SafeArea(
-      child: Scaffold(
-        body: Home(),
-      ),
+    return Column(
+      children: [
+        const SizedBox(
+          height: 32,
+        ),
+        Text(
+          "Categories",
+          style: context.titleLarge.copyWith(
+            color: context.colorScheme.primary,
+          ),
+        ),
+        const SizedBox(
+          height: 24,
+        ),
+      ],
     );
   }
 }

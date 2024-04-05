@@ -1,11 +1,12 @@
 //? Built-in Dart Packages
 
 //? Internal Packages
-import 'package:flutter/material.dart';
-
-//? External Packages
 import 'package:commit_m/screens/home/widgets/header/header.dart';
 import 'package:commit_m/core/collections/constant/constant.dart';
+import 'package:commit_m/screens/home/widgets/search/home_search.dart';
+
+//? External Packages
+import 'package:flutter/material.dart';
 
 /*
  * Widget
@@ -31,7 +32,16 @@ class Home extends StatelessWidget {
       padding: EdgeInsets.symmetric(
         horizontal: horizontalPadding,
       ),
-      child: HomeHeader(),
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: HomeHeader(),
+          ),
+          SliverToBoxAdapter(
+            child: HomeSearch(),
+          ),
+        ],
+      ),
     );
   }
 }
